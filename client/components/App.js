@@ -19,7 +19,6 @@ class App extends Component {
     this.getUserSchemaArr = this.getUserSchemaArr.bind(this);
     this.redirectToLogin = this.redirectToLogin.bind(this);
     this.redirectToDashboard = this.redirectToDashboard.bind(this);
-    //reinit app state
     this.clearAppState = this.clearAppState.bind(this)
   }
 
@@ -84,7 +83,6 @@ class App extends Component {
             redirectToLogin={this.redirectToLogin}
             getUserSchemaArr={this.getUserSchemaArr}
             clearAppState={this.clearAppState}
-            //reinit
           />
         }
         {this.state.screen === 'login' &&
