@@ -21,16 +21,34 @@ describe('Route Integration', () => {
                     done();
                 })
             )
-
         })
-    });
-    describe('testing Schema', () => {
-        describe('GET', () => {
-
+    })
+    describe('testing against /auth', () => {
+        describe('POST', () => {
+            describe('when a user is logged in', () => { 
+                it('responds with 200 status and application/json content type', () => request(server)
+                    .post('/auth/login')
+                    .send('{userid: anyId}')
+                    .set('Accept', 'application/json')
+                    .expect(function(res) {
+                        res.body.id = 'some id';
+                    })
+                    .end(function (err, res) {
+                        if (err) return done(err);
+                        done();
+                }))
+            })
+            describe('when a user is created', () => {
+                it ('responds with 200 status and application/json content type', () => request(server)
+                
+                )
+            })
         })
 
     })
     
     
-});
+
+
+})
 
