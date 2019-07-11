@@ -41,6 +41,6 @@ app.use('/github', github);
 
 
 
-app.listen(port, () => {
+module.exports = app.listen(port, () => {
   console.log(`Listening on port ${port}...`);
 });

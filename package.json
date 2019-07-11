@@ -24,9 +24,12 @@
   "homepage": "https://github.com/schema-armadillo/Schema-Armadillo#readme",
   "devDependencies": {
     "@babel/cli": "^7.1.0",
-    "@babel/core": "^7.1.0",
-    "@babel/preset-env": "^7.1.0",
+    "@babel/core": "^7.0.0",
+    "@babel/plugin-transform-modules-commonjs": "^7.0.0",
+    "@babel/preset-env": "^7.5.4",
     "@babel/preset-react": "^7.0.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^23.4.2",
     "babel-loader": "^8.0.6",
     "css-loader": "^3.0.0",
     "enzyme": "^3.10.0",
@@ -44,6 +47,7 @@
     "webpack-dev-server": "^3.7.2"
   },
   "dependencies": {
+    "@babel/core": "^7.0.0",
     "@babel/plugin-transform-async-to-generator": "^7.5.0",
     "@babel/plugin-transform-runtime": "^7.5.0",
     "axios": "^0.19.0",

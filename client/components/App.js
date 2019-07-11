@@ -80,7 +80,7 @@ class App extends Component {
 
   render() {
     return (
-      <>
+      <div>
         <Nav
           isLogged={this.state.isLogged}
           redirectToLogin={this.redirectToLogin}
@@ -106,7 +106,7 @@ class App extends Component {
         {this.state.screen === 'signup' &&
           <Signup />
         }
-      </>
+      </div>
     );
   }
 }
