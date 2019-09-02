@@ -26,3 +26,8 @@ You can:
 
 ## What else can I do with Schema-Armadillo?
 Our Mongoose code snippets (created when you click `Create Schema`) are copied on click! (That's right, no click and drag, copy paste, business)
+
+## What to work with this project?
+1) Fork and clone this repo to your local machine
+2) npm install
+3) npm run dev
